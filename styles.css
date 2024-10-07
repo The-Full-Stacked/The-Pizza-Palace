@@ -1,0 +1,178 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #008000; /* Bright Green */
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Gold on hover */
+    text-shadow: 0 0 5px #ffcc00;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('pizza-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    filter: brightness(0.8);
+    border-bottom: 5px solid #008000; /* Adds a green border at the bottom for style */
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #ffcc00; /* Gold */
+    border: none;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.hero button:hover {
+    background-color: #ffb700; /* Darker gold */
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ffcc00;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px;
+    background-color: #333; /* Dark background */
+    border-top: 5px solid #008000;
+    border-bottom: 5px solid #008000;
+}
+
+.feature {
+    width: 28%;
+    background-color: #1a1a1a; /* Slightly lighter black */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 255, 0, 0.4); /* Green glow */
+    margin: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+.feature img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.feature h3 {
+    color: #00ff00; /* Neon Green */
+    margin-top: 10px;
+}
+
+.feature p {
+    color: #d3d3d3; /* Light Grey */
+    padding: 0 15px 15px;
+}
+
+/* Order Page - Pizza Options */
+.order-section {
+    padding: 50px;
+    background-color: #1a1a1a;
+}
+
+.pizza-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pizza-item {
+    width: 28%;
+    background-color: #333;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 255, 0, 0.4);
+    transition: transform 0.3s;
+}
+
+.pizza-item:hover {
+    transform: translateY(-5px);
+}
+
+.pizza-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.pizza-item button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    border: none;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.pizza-item button:hover {
+    background-color: #ffb700;
+    box-shadow: 0 0 10px #ffcc00;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #008000; /* Bright Green */
+    color: black;
+    font-weight: bold;
+    margin-top: 20px;
+    border-top: 5px solid black;
+}
